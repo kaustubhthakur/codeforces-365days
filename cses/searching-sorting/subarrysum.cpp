@@ -7,7 +7,14 @@ void solve()
    vector<int>a(n);
    for(int i=0;i<n;i++) cin>>a[i];
    int maxsub=0;
-   int l=0,r=n-1; 
+   int l=0,r=n-1;
+   for(int i=0;i<n;i++)
+   {
+    while(r>=l)
+    {
+        
+    }
+   } 
 }
 int main()
 { 
