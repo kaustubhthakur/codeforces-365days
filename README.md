@@ -19,16 +19,16 @@
  1) Expert = codeforces
  2) 1400   = Atcoder
  3) 5 Star = codechef
- Duration:8 months
+ *) Duration:8 months
 
  # Level-2
  1) Candidate-Master = codeforces
  2) 1600 = Atcoder
- Duration = 6 months
+ *) Duration = 6 months
 
  # Level-3 
  1) Master = codeforces
  2) 1800 = Atcoder
  3) 6 star = Codechef
- Duration = 6 months
+*)  Duration = 6 months
 
