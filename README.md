@@ -30,5 +30,5 @@
  1) Master = codeforces
  2) 1800 = Atcoder
  3) 6 star = Codechef
-*)  Duration = 6 months
+ *) Duration = 6 months
 
