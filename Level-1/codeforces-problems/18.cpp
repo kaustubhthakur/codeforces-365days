@@ -1,35 +1,18 @@
 #include <bits/stdc++.h>
+ 
 using namespace std;
-void solve()
-{
-  int n;
-  cin>>n;
-  set<int>st;
-  vector<int>a(n);
-  for(int i=0;i<n;i++) 
-  {cin>>a[i];
-st.insert(a[i]);
+ 
+int main() {
+ int t, n, a; cin>>t; while (t--) {
+  int l{1}, x{}, p{}; cin>>n;
+  int A[n+1]{};
+  while (n--) {
+   cin>>a;
+   l += a<p or (A[a] and A[a]<l);
+   if (A[a] and A[a]<l) p=0; else A[p=a]=l;
   }
-  int cnt=0;
-  for(int i=0;i<n;i++)
-  {
-    if(a[i]>=a[i+1])
-    
-    {
-        a[i]=0;
-cnt++;
-    }
-  }  
-  cout<<cnt<<endl;
-}
-int main()
-{
-  int t;
-  cin>>t;
-  while(t--)
-  {
-    solve();
-  }
-
-    return 0;
+  for (auto a: A) x+=a and a<l;
+  cout<<x<<'\n';
+ }
+ return 0;
 }
