@@ -6,7 +6,7 @@ int main()
     cin>>t;
     while(t--)
     {
-        int n,m,dx,dy,dn,dm;
+        int n,m,dx,dy,dm,dn;
         cin>>n>>m>>dx>>dy>>dm>>dn;
     }
     return 0;
