@@ -4,6 +4,7 @@ void solve()
 {
     int n,l,r;
     cin>>n>>l>>r;
+   
 }
 int main()
 {  
