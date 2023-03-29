@@ -1,4 +1,4 @@
-
+#include <bits/stdc++.h>
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -14,17 +14,20 @@ int main()
         for (int i = 0; i < n; i++)
             cin >> arr[i];
         sort(arr, arr + n);
-        bool f = (arr[0] == 1);
-        for (int i = 1; i < n && f; i++)
+        bool flag = (arr[0] == 1);
+        for (int i = 1; i < n && flag; i++)
         {
             if (k < arr[i])
-                f = false;
+                flag = false;
             k += arr[i];
         }
-        if (f)
-            cout << "YES\n";
+
+        if (flag)
+        cout << "YES" << endl;
         else
-            cout << "NO\n";
+        cout << "NO" << endl;
+
     }
+
     return 0;
 }
