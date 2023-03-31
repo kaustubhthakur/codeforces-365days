@@ -15,7 +15,7 @@ int main()
       {
         maxi = max(x % 10, maxi);
         mini = min(x % 10, mini);
-        x /= 10;
+        x = x / 10;
       }
       if (ans <= maxi - mini)
         ans = maxi - mini,
