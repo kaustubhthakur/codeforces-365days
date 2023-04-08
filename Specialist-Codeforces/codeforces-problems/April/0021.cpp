@@ -33,6 +33,8 @@ int main()
         cout<<maxa*maxb<<endl;
     }
 
+
+
     
     return 0;
 }
