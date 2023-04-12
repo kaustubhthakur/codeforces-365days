@@ -20,4 +20,5 @@ cout<<"YES"<<endl;
             cout<<"NO"<<endl;
         }
     }
+    return 0;
 }
