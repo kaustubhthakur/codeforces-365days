@@ -16,7 +16,7 @@ int main()
     long long cost = 0;
     int ans;
     sort(a.begin(), a.end());
-    for (int i = 0; i < n; i++)
+    for (int i = st.begin(); i !=st.end(); i++)
     {
         cost += a[0]
     }
