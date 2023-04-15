@@ -26,7 +26,7 @@ int main()
        bool flag =false;
        for(int i=0;i<n;i++)
        {
-        a[i]= a[i]-updated;
+        a[i]-=updated;
         updated= m-b[i];
       flag = true;   
          }
