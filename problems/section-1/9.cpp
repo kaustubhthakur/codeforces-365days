@@ -23,8 +23,10 @@ int main()
       }
       for(auto it :a)
       {
-        cout<<it<<" ";
+        cout<<it<<"  ";
       }
+ 
+ 
       cout<<endl;
     }
     return 0;
