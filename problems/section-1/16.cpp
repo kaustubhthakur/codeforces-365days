@@ -18,4 +18,5 @@ int main(){
 if(i==n)cout<<"YES"<<'\n';
 else cout<<"NO"<<'\n';
 }
+return 0;
 }
