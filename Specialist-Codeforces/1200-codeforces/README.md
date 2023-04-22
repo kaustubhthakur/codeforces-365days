@@ -1,6 +1,6 @@
 section-1 and Section-2 
 total-Problems = 500
-rating range = [800,1500]
+rating range = [800,1400]
 topics to cover = 
 [
 Binary search
