@@ -1,27 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
-void solve()
-{
-  int n;
-  cin>>n;
-  while(n--)
-  {
-    int x;
-    cin>>x;
-    vector<int>a(x);
-    for(int i=0;i<x;i++)
-    cin>>a[i];
-    
-  }
-  
-}
 int main()
 {
     int t;
-    cin >> t;
-    while (t--)
+    cin>>t;
+    while(t--)
     {
-        solve();
+     int n;
+     cin>>n;
+     string str;
+     cin>>str;
+     for(int i=0;i<n;i++)
+     {
+        int sol = str[i]-'0'+1;
+        if(str[sol]<str[sol+1])
+        {
+            swap(str[sol],str[sol+1]);
+        }
+        
+        cout<<str[i];
     }
-    return 0;
+    cout<<endl;
+}
+return 0;
 }

@@ -1,17 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
-int T, n;
-string s;
 int main()
 {
-    cin >> T;
-    while (T--)
+    int t;
+    cin>>t;
+    while(t--)
     {
-        int ans = -1;
-        cin >> n >> s;
-        for (int i = 0; i < n; i++)
-            ans += ((!i && s[i] == '1') || (i && s[i] != s[i - 1]));
-        cout << max(0, ans) << endl;
+int a,b;
+cin>>a>>b;
+for(int i=0;i<min(a,b);i++)
+cout<<"01";
+
+for(int i=0;i<abs(a-b);i++)
+if(a<b)
+cout<<1;
+else 
+cout<<0;
+
+cout<<endl;
+
     }
     return 0;
 }

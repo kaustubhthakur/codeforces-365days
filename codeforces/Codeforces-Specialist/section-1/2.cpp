@@ -3,30 +3,32 @@ using namespace std;
 int main()
 {
     int t;
-    cin >> t;
-    while (t--)
+    cin>>t;
+    while(t--)
     {
+        int n;
+        cin>>n;
         string str;
-        cin >> str;
-        int cnt = 0;
-        string res;
-        for (int i = 0; i < str.size(); i++)
-        {
-            if (str[i] == '_')
-            {
-                if (res.empty() || res.back() != '^')
-
-                    res += "^";
-                res += str[i];
-            }
-            else
-                res += str[i];
-        }
-        if (res.back() == '_')
-
-            res += '^';
-        cnt = max((long long)res.size(), 2LL) - str.size();
-        cout << cnt << endl;
+        cin>>str;
+        vector<int>v;
+int sol =0;
+for(int i=0;i<n;i++)
+{
+if(str[i]=='0')
+{
+    v.push_back(i);
+}
+}
+for(int i=0;i<(int)v.size()-1;i++)
+{
+    if(v[i+1]-v[i]<=2)
+    {
+        sol+=2-(v[i+1]-v[i])+1;
+    }
+}
+cout<<sol<<endl;
+    
+       
     }
     return 0;
 }
