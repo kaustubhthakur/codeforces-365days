@@ -1,1 +1,0 @@
-//900-1400 rating form codeforces
