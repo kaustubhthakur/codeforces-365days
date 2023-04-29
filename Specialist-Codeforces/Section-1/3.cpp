@@ -1,25 +1,22 @@
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
+
 void solve()
 {
   int n;
   cin>>n;
-  vector<int>a(n);
-  for(int i=0;i<n;i++)
+ll a[n];
+  
+  for(ll i=0;i<n;i++)
   {
     cin>>a[i];
   }
-  long long prod=0;
-  int maxi =0;
-  for(int i=0;i<n;i++)
-  {
-    for(int j=n-1;j>0;j--)
-    {
-         maxi = max(a[i]*a[j],0);
-         prod = maxi;
-    }
-  }
-  cout<<prod<<endl;
+
+  sort(a,a+n);
+  ll maxi = a[0]*a[1];
+  ll ans = a[n-1]*a[n-2];
+ cout<<max(maxi,ans)<<endl;
 }
 int main()
 {
