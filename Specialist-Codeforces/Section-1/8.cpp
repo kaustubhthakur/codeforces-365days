@@ -1,49 +1,32 @@
 #include <bits/stdc++.h>
-using namespace  std;
+using namespace std;
 int main()
 {
 
-int t;
-cin>>t;
-while(t--)
-{
-    int n;
-    cin>>n;
-    vector<int>a(n);
-    for(int i=0;i<n;i++) cin>>a[i];
-    bool flag = false;
-
-int cnt =0;
-    for(int i=0;i<n;i++)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        if(a[i+1]>a[i]|| a[i]>a[i+1])
-        {
-            flag = true;
+        int n;
+    cin >> n;
+    int arr[n];
+    long long int altsum=0;
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+        if(i%2==0){
+            altsum-=arr[i];
         }
-        else 
-        {
-if(a[i]>a[i+1])
-{
-    cnt++;
-}
+        else{
+            altsum+=arr[i];
         }
     }
-if(flag == true)
-{
-    cout<<"YES"<<endl;
-}
-else 
-{
-    if(cnt%2==1)
-    {
-        cout<<"YES"<<endl;
+    if(n%2==1||altsum>=0){
+        cout << "YES\n";
     }
-    else 
-    {
-        cout<<"NO"<<endl;
+    else{
+        cout << "NO\n";
     }
-}
+    }
 
-}   
-return 0; 
-} 
+    return 0;
+}
